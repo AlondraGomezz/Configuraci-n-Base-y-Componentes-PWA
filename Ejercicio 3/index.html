@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi primera PWA | Inicio</title>
+
+    <meta name="theme-color" content="#6F4E37">
+    <meta name="description" content="Aplicación web progresiva con una interfaz responsiva.">
+
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <a class="brand" href="./index.html">
+            <span class="brand-icon">☕</span>
+            <span>Mi primera PWA</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="main-nav">
+            ☰
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+            <a class="active" href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#acerca">Acerca de</a>
+        </nav>
+    </header>
+
+    <main class="app-main" id="inicio">
+        <section class="welcome-card">
+            <span class="welcome-icon">☕</span>
+            <p class="eyebrow">TU ESPACIO DIGITAL</p>
+
+            <h1>Bienvenido a mi PWA</h1>
+
+            <p class="description">
+                Una aplicación web progresiva con una interfaz sencilla,
+                adaptable a computadoras, tabletas y celulares.
+            </p>
+
+            <a class="primary-button" href="#servicios">
+                Explorar contenido
+            </a>
+        </section>
+
+        <section class="features" id="servicios">
+            <article class="feature-card">
+                <span class="feature-icon">📱</span>
+                <h2>Diseño responsivo</h2>
+                <p>Una interfaz que se adapta al tamaño de tu pantalla.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <h2>Experiencia rápida</h2>
+                <p>Una estructura ligera preparada para evolucionar a PWA.</p>
+            </article>
+
+            <article class="feature-card" id="acerca">
+                <span class="feature-icon">🌐</span>
+                <h2>Acceso web</h2>
+                <p>Accede al contenido desde un navegador compatible.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p> PWA</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

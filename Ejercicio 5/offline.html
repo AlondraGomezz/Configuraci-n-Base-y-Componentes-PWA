@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6F4E37">
+    <title>Sin conexión | Mi PWA</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #3E2B22;
+            background: #F7F1E8;
+        }
+
+        .offline-card {
+            width: 100%;
+            max-width: 480px;
+            padding: 36px 28px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(62, 43, 34, 0.12);
+        }
+
+        .offline-icon {
+            font-size: 64px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            color: #6F4E37;
+            margin-bottom: 12px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #66564B;
+        }
+
+        button {
+            margin-top: 18px;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 10px;
+            background: #6F4E37;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #523927;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="offline-card">
+        <div class="offline-icon" aria-hidden="true">☕</div>
+
+        <h1>¡Ups! No tienes conexión</h1>
+
+        <p>
+            Parece que no hay conexión a Internet en este momento.
+            Puedes seguir utilizando los recursos que ya estén guardados
+            en la aplicación.
+        </p>
+
+        <p>
+            Cuando recuperes la conexión, intenta cargar la página nuevamente.
+        </p>
+
+        <button onclick="window.location.reload()">
+            Intentar de nuevo
+        </button>
+    </main>
+</body>
+</html>

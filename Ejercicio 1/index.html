@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi primera PWA</title>
+
+    <meta name="theme-color" content="#6F4E37">
+    <meta name="description" content="Mi primera Aplicación Web Progresiva desarrollada con HTML, CSS y JavaScript.">
+
+    <link rel="manifest" href="./manifest.json">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #F7F1E8;
+            color: #3E2C23;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 520px;
+            padding: 36px 24px;
+            text-align: center;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px #3E2C231A;
+        }
+
+        .logo {
+            font-size: 64px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            color: #6F4E37;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        .status {
+            margin-top: 24px;
+            padding: 12px;
+            border-radius: 10px;
+            background: #F7F1E8;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="logo">😸</div>
+
+        <h1>Mi primera PWA</h1>
+
+        <p>
+            Bienvenido a mi primera Aplicación Web Progresiva.
+            Esta página utiliza un Web App Manifest para definir
+            su nombre, apariencia e información de instalación.
+        </p>
+
+        <div class="status">
+            Ejercicio 1: Web App Manifest configurado.
+        </div>
+    </main>
+</body>
+</html>
